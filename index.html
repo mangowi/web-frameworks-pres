@@ -41,8 +41,11 @@
   <div class="slides">
     <section>
       <h1>Web Frameworks</h1>
+
       <h2>A Comparative Overview</h2>
+
       <p>VIA UC, November 2015</p>
+
       <p>Kristofer Carta, ICT</p>
     </section>
     <section>
@@ -70,7 +73,8 @@
           <li>Intermediate/Advanced topics</li>
           <li>Frameworks x, y, and/or z</li>
           <ul>
-            <li style="font-size:.65em"><i>Your favorite node framework is great, yes. I love JS too. Now please be quiet.</i></li>
+            <li class="tagline"><i>Your favorite node framework is great, yes. I love JS too. Now please be
+              quiet.</i></li>
           </ul>
         </ul>
       </section>
@@ -119,9 +123,22 @@
     <section>
       <section>
         <h2>So...what are web frameworks?</h2>
+
+        <p class="tagline"><i>Hint: it's just code, there's nothing magical going on under the hood!</i></p>
       </section>
       <section>
-        <h2>Your problems have already been solved!</h2>
+        <h2>The super-duper basics:</h2>
+        <ul>
+          <li>Most web applications have a front-end and a back-end.</li>
+          <li>The front-end runs in every user's web browser, while the back-end will usually only be on a single server.</li>
+          <li>All the important logic and things like authentication and database access should take place on the back-end.</li>
+          <li>The front-end is responsible for sending requests to the back-end, which sends responses back.</li>
+          <li>A front-end can only ever be written in HTML, CSS and JavaScript.</li>
+          <li>A back-end can be written in any language, but usually something like PHP or Java or C#.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Frameworks: Your problems have already been solved!</h2>
         <p><i>If you want to build a database-backed application on the web, why reinvent the wheel?</i></p>
         <h4>Frameworks give you:</h4>
         <ul>
@@ -130,65 +147,83 @@
           <li>Authentication and security (NEVER do these yourself!!!!!!)</li>
           <li>Documentation and support</li>
           <li>Community</li>
+          <li>Opinions gained from collective experience</li>
         </ul>
       </section>
+      <section>
+        <p>A web framework takes care of wiring together all the nitty-gritty stuff common to most web applications.</p>
+
+        <p>This frees you to work on the things that make your application <b>unique</b>.</p>
+      </section>
     </section>
     <section>
-      <h3>What they are not...</h3>
-    </section>
-    </section>
-
-    <!-- Example of nested vertical slides -->
-    <section>
-      <section>
-        <h2>Vertical Slides</h2>
-
-        <p>Slides can be nested inside of each other.</p>
-
-        <p>Use the <em>Space</em> key to navigate through all slides.</p>
-        <br>
-        <a href="#" class="navigate-down">
-          <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
-               alt="Down arrow">
-        </a>
-      </section>
-      <section>
-        <h2>Basement Level 1</h2>
-
-        <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-      </section>
-      <section>
-        <h2>Basement Level 2</h2>
-
-        <p>That's it, time to go back up.</p>
-        <br>
-        <a href="#/2">
-          <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
-               alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-        </a>
-      </section>
+      <h3>What frameworks are not...</h3>
+      <ul>
+        <li>A Content Management System (CMS)
+          <ul>
+            <li>WordPress, Squarespace, Wikis, Drupal, etc.</li>
+            <li>No drag-and-drop interfaces.</li>
+          </ul>
+        </li>
+        <li>An out-of-the-box solution
+          <ul>
+            <li>You still have to code out your application.</li>
+          </ul>
+        </li>
+        <li>Perfect
+          <ul>
+            <li>Even the most well-established frameworks have bugs and flaws. They are made by people, after all...
+            </li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
     <section>
-      <h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-            function linkify( selector ) {
-            if( supports3DTransforms ) {
+      <section>
+        <h2>Architecture</h2>
 
-            var nodes = document.querySelectorAll( selector );
+        <p class="tagline"><i>Don't be frightened...</i></p>
+      </section>
+      <section>
+        <h3></h3>
+      </section>
+      <section>
+        <h3>MVC</h3>
+      </section>
+      <section>
+        <h3>N-Tier</h3>
+      </section>
+    </section>
 
-            for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-            var node = nodes[i];
+    <section>
+      <section>
+        <h2>Databases &amp; ORM</h2>
+      </section>
+      <section>
+        <h3></h3>
+      </section>
+      <section>
+        <h3>Object-Relational Impedance Mismatch</h3>
+        <p class="tagline"><i>One way or another, you're going to have to get your objects into and out of a database...</i></p>
+        <p>Just a hoity-toity way of saying "objects are not relations"</p>
+        <p>An Object-Relational mapper translates between your application code and your database.</p>
+        <img src="assets/orm.png" alt="">
+      </section>
+    </section>
 
-            if( !node.className ) {
-            node.className += ' roll';
-            }
-            }
-            }
-            }
-          </code></pre>
-      <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.
-      </p>
+    <section>
+      <section>
+        <h2>Routing</h2>
+      </section>
+      <section>
+        <h3>HTTP in brief</h3>
+        <p>HTTP is the protocol for sending requests to a web server</p>
+        <ul>
+          <li>GET /resourceURL</li>
+          <li>POST /resourceURL</li>
+        </ul>
+      </section>
     </section>
     <section>
       <section>

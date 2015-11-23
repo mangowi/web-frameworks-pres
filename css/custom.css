@@ -1,3 +1,9 @@
 .logo {
     width: 220px;
 }
+
+
+.tagline {
+    /* Have to use !important to override crazy revealjs styling... */
+    font-size: .65em !important;
+}
