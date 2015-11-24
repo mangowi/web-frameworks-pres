@@ -192,6 +192,7 @@
       </section>
       <section>
         <h3>Similar programs follow similar patterns</h3>
+
         <p>Most web applications have to take care of:</p>
         <ol>
           <li>Showing something to the user</li>
@@ -201,6 +202,7 @@
       </section>
       <section>
         <h3>MVC</h3>
+
         <p>MVC separates these three actions into:</p>
         <ul>
           <li>Model
@@ -211,7 +213,8 @@
           <li>View
             <ul>
               <li>What the user sees and interacts with</li>
-            </ul></li>
+            </ul>
+          </li>
           <li>Controller
             <ul>
               <li>Acts on input, glues View and Model together</li>
@@ -224,6 +227,7 @@
       </section>
       <section>
         <h3>N-Tier</h3>
+
         <p>N-tier applications are split up into layers:</p>
         <img style="width:8em; margin-right:3px" src="assets/lagkage.jpg" alt="N-tier cake">
         <ul>
@@ -247,13 +251,24 @@
       </section>
       <section>
         <h3>Roundup on architecture</h3>
+
         <p>With experience you'll get used to seeing MVC application frameworks, they're everywhere</p>
+
         <p><i class="tagline">Remember: "Model, View, Glue"</i></p>
+
         <p>N-Tier is more common in ground-up enterprise applications</p>
       </section>
       <section>
         <h3>Application Layout</h3>
+
         <p><i class="tagline">Comparing the frameworks</i></p>
+      </section>
+      <section>
+        <h3>Convention over Configuration</h3>
+        <p><i class="tagline">Shut up, brain. I got friends now. I don't need you anymore</i></p>
+        <p>Frameworks limit the code needed for common behaviors (like routing) by encouraging "coding by convention"</p>
+        <p>Naming conventions can specify behavior, for example</p>
+
       </section>
 
     </section>
@@ -263,9 +278,12 @@
         <h2>Databases &amp; ORM</h2>
       </section>
       <section>
-        <h3>In a hand-coded application, </h3>
-
-        <p>In a from-scratch application, the developer has to do </p>
+        <h3>Take the database pain away</h3>
+        <p>In a from-scratch application, the developer has to wire the database and application together.</p>
+        <p>This is always painful.</p>
+        <img style="width:8em" src="assets/wiring.jpg" alt="Terrible Wiring">
+        <p>Frameworks do most of the database work for you.</p>
+        <p>(This is usually a great thing!)</p>
       </section>
       <section>
         <h3>Object-Relational Impedance Mismatch</h3>
@@ -273,9 +291,9 @@
         <p class="tagline"><i>One way or another, you're going to have to get your objects into and out of a
           database...</i></p>
 
-        <p>Just a hoity-toity way of saying "objects are not relations"</p>
+        <p>Just a highfalutin way of saying "objects are not relations"</p>
 
-        <p>An Object-Relational mapper translates between your application code and your database.</p>
+        <p>An Object-Relational Mapper (ORM) translates between your application model and your database.</p>
         <img src="assets/orm.png" alt="ORM Diagram">
       </section>
     </section>
@@ -313,12 +331,11 @@
         <h2>Tooling</h2>
         <p class="tagline">The command line is your friend...</p>
         <ul>
-          <li>Rails uses RubyGems to provide extensions</li>
-          <li>Laravel uses Composer </li>
+          <li>Rails uses the command line for almost everything</li>
+          <li>Laravel uses Artisan on the command line</li>
           <li>In ASP.NET, Visual Studio provides everything (now via NuGet)</li>
         </ul>
-
-        <p class="tagline"></p>
+        <img src="assets/console.png" alt="Rails Console">
       </section>
       <section>
         <h4>Text Editors</h4>
@@ -328,7 +345,7 @@
             <li>The magic happens on the command line!</li>
             <li>IDEs like RubyMine are also available</li>
           </ul>
-          <li>Laravel can go either way </li>
+          <li>Laravel can go either way</li>
           <li>ASP.NET (almost) requires the use of Visual Studio</li>
         </ul>
       </section>
@@ -350,16 +367,28 @@
         </ul>
       </section>
       <section>
-        <h3>Community, compared</h3>
+        <h3>Community &amp; documentation, compared</h3>
         <ul>
-          <li>Rails is famous for its now-well established community. It suffers from a monoculture, so if you're not on
-            the right platform, you might struggle.
+          <li>Rails
+            <ul>
+              <li>Famous for its community</li>
+              <li>Suffers from a monoculture</li>
+              <li>Plentiful documentation and tutorials</li>
+            </ul>
           </li>
-          <li>Laravel is newer, but has a growing community. You will most likely to find support and tooling and documentation
-            for whatever you're working on.
+          <li>Laravel
+            <ul>
+              <li>Newer, but has a growing community</li>
+              <li>The best documentation you'll find for any framework</li>
+            </ul>
           </li>
-          <li>ASP.NET has been around for a long time and is a Microsoft flagship product. The community is very large,
-            but almost entirely corporate professional. Open source .NET projects are less common.
+          <li>ASP.NET
+            <ul>
+              <li>Has been around for a very, very long time</li>
+              <li>Way too much documentation, nearly all of it outdated</li>
+              <li>Very large community, almost entirely corporate</li>
+              <li>Wide range of support options</li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -367,34 +396,71 @@
         <h3>Language</h3>
         <h4>What languages do you know?</h4>
 
-        <p class="tagline">Does Java make you feel safe and warm, or do you feel strangled by it?</p>
+        <p class="tagline">Does Java make you feel safe and warm, or do you find it rigid and suffocating?</p>
         <ul>
-          <li>You love Java -> ASP.NET</li>
-          <li>You hate Java -> Rails, Laravel</li>
+          <li>You love Java -> ASP.NET, Spring</li>
+          <li>You hate Java -> Rails, Laravel
+            <ul>
+              <li>Any other PHP, Ruby, JavaScript, Python frameworks</li>
+            </ul>
+          </li>
         </ul>
       </section>
       <section>
         <h3>Platform and licensing</h3>
+        <p><i class="tagline">How much do you love Microsoft? Would you marry it?</i></p>
         <ul>
           <li>Linux servers are abundant and cheap
             <ul>
-              <li>Can host Rails and Laravel projects for under &euro;10/70kr per month</li>
+              <li>Can host Rails and Laravel for under &euro;10 a month*</li>
+              <li>Easily put on a VM for development</li>
             </ul>
           </li>
           <li>ASP.NET hosting is much more expensive
             <ul>
               <li>Windows Servers are typically self-owned</li>
-              <li>Azure hosting is not cheap</li>
-              <li>SQL Server licensing also expensive</li>
+              <li>Azure hosting is not cheap (it is competitive though)</li>
+              <li>SQL Server licensing gets very expensive</li>
+              <li>Unrealistic to develop on anything but Windows</li>
             </ul>
           </li>
         </ul>
       </section>
     </section>
 
+    <section>
+      <section>
+        <h3>Resources</h3>
+      </section>
+      <section>
+        <h4>Rails</h4>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section>
+        <h4>ASP.NET</h4>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Laravel</h4>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+    </section>
 
-    <section style="text-align: left;">
+    <section>
       <h1>THE END</h1>
+      <img src="assets/thatsall.gif" alt="The End">
     </section>
 
   </div>
